@@ -1925,7 +1925,7 @@ module.exports = ECDSA;
 (function (Buffer){
 'use strict';
 
-var crypto = require('crypto');
+var crypto = require('crypto-browserify');
 var BufferUtil = require('../util/buffer');
 var $ = require('../util/preconditions');
 
@@ -2180,7 +2180,7 @@ Random.getRandomBuffer = function(size) {
 };
 
 Random.getRandomBufferNode = function(size) {
-  var crypto = require('crypto');
+  var crypto = require('crypto-browserify');
   return crypto.randomBytes(size);
 };
 
@@ -18712,7 +18712,7 @@ if (typeof self === 'object') {
 } else {
   // Node.js or Web worker with no crypto support
   try {
-    var crypto = require('crypto');
+    var crypto = require('crypto-browserify');
     if (typeof crypto.randomBytes !== 'function')
       throw new Error('Not supported');
 

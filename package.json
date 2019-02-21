@@ -1,8 +1,8 @@
 {
-  "name": "bitcore-lib",
-  "version": "0.16.0",
-  "description": "A pure and powerful JavaScript Bitcoin library.",
-  "author": "BitPay <dev@bitpay.com>",
+  "name": "bitcore-lib-react-native",
+  "version": "0.1.0",
+  "description": "Bitcore fork for React Native compatibility.",
+  "author": "BitPay <dev@bitpay.com> Jack Caldwell <jackcaldwell92@gmail.com>",
   "main": "index.js",
   "scripts": {
     "lint": "gulp lint",
@@ -37,6 +37,7 @@
     "bn.js": "=4.11.8",
     "bs58": "=4.0.1",
     "buffer-compare": "=1.1.1",
+    "crypto-browserify": "^3.12.0",
     "elliptic": "=6.4.0",
     "inherits": "=2.0.1",
     "lodash": "=4.17.11"
